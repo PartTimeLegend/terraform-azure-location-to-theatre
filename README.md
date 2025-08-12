@@ -5,6 +5,7 @@ Azure Theatre is a Terraform module that maps Azure regions to their respective 
 ## Features
 
 - Provides a mapping of Azure regions to their theatres of operation.
+- Supports both standard format region names (e.g., "UK South") and lowercase, no-space versions (e.g., "uksouth").
 - Outputs lists of all Azure region names and theatre names.
 - Allows querying of the theatre for a specific Azure region.
 
@@ -17,7 +18,7 @@ Below is an example of how to use the `azure-theatre` module in your Terraform c
 ```terraform
 # filepath: [main.tf](http://_vscodecontentref_/0)
 locals {
-  azure_region = "uksouth"
+  azure_region = "uksouth"  # Works with both "uksouth" and "UK South" formats
 }
 
 module "azure_theatre" {
@@ -35,3 +36,22 @@ output "theatres" {
 output "theatre" {
   value = module.azure_theatre.azure_locations_to_theatres[local.azure_region]
 }
+```
+
+### Flexible Region Name Formats
+
+This module supports looking up theatre information using either the standard Azure region format (e.g., "East US", "UK South") or the normalized format commonly used in ARM templates and APIs (e.g., "eastus", "uksouth").
+
+Example:
+
+```terraform
+module "azure_theatre" {
+  source = "../../"
+}
+
+# Both of these lookups will return "EMEA"
+locals {
+  theatre1 = module.azure_theatre.azure_locations_to_theatres["UK South"]
+  theatre2 = module.azure_theatre.azure_locations_to_theatres["uksouth"]
+}
+```

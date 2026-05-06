@@ -20,12 +20,16 @@ variable "azure_locations_to_theatres" {
     "Italy North"             = "EMEA"
     "Poland Central"          = "EMEA"
     "Spain Central"           = "EMEA"
+    "Austria East"            = "EMEA"
+    "Belgium Central"         = "EMEA"
+    "Denmark East"            = "EMEA"
     "South Africa North"      = "EMEA"
     "South Africa West"       = "EMEA"
     "UAE Central"             = "EMEA"
     "UAE North"               = "EMEA"
     "Qatar Central"           = "EMEA"
     "Israel Central"          = "EMEA"
+    "Turkey West"             = "EMEA"
 
     # APAC regions
     "East Asia"               = "APAC"
@@ -41,13 +45,17 @@ variable "azure_locations_to_theatres" {
     "Central India"           = "APAC"
     "South India"             = "APAC"
     "West India"              = "APAC"
-    "Malaysia South"          = "APAC"
     "Jio India West"          = "APAC"
     "Jio India Central"       = "APAC"
+    "Indonesia Central"       = "APAC"
+    "Malaysia West"           = "APAC"
+    "New Zealand North"       = "APAC"
     "China East"              = "APAC"
     "China East 2"            = "APAC"
+    "China East 3"            = "APAC"
     "China North"             = "APAC"
     "China North 2"           = "APAC"
+    "China North 3"           = "APAC"
 
     # AMER regions
     "East US"                 = "AMER"
@@ -62,13 +70,16 @@ variable "azure_locations_to_theatres" {
     "Canada East"             = "AMER"
     "Brazil South"            = "AMER"
     "Brazil Southeast"        = "AMER"
+    "Chile Central"           = "AMER"
 
     # US Government regions
     "US Gov Arizona"          = "AMER"
     "US Gov Texas"            = "AMER"
     "US Gov Virginia"         = "AMER"
+    "US Gov Iowa"             = "AMER"
+    "US Gov Utah"             = "AMER"
+    "US Gov California"       = "AMER"
     "US DoD Central"          = "AMER"
     "US DoD East"             = "AMER"
-    "US Gov Iowa"             = "AMER"
   }
 }

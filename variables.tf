@@ -50,6 +50,7 @@ variable "azure_locations_to_theatres" {
     "Indonesia Central"       = "APAC"
     "Malaysia West"           = "APAC"
     "New Zealand North"       = "APAC"
+    "Taiwan North"            = "APAC"
     "China East"              = "APAC"
     "China East 2"            = "APAC"
     "China East 3"            = "APAC"
@@ -71,6 +72,7 @@ variable "azure_locations_to_theatres" {
     "Brazil South"            = "AMER"
     "Brazil Southeast"        = "AMER"
     "Chile Central"           = "AMER"
+    "Mexico Central"          = "AMER"
 
     # US Government regions
     "US Gov Arizona"          = "AMER"

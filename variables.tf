@@ -1,5 +1,5 @@
 variable "azure_locations_to_theatres" {
-  description = "Mapping of Azure locations to their theatre of operations (EMEA, APAC, AMER)"
+  description = "Mapping of Azure public cloud locations to their theatre of operations (EMEA, APAC, AMER)"
   type        = map(string)
   default = {
     # EMEA regions
@@ -16,7 +16,6 @@ variable "azure_locations_to_theatres" {
     "Switzerland North"       = "EMEA"
     "Switzerland West"        = "EMEA"
     "Sweden Central"          = "EMEA"
-    "Sweden South"            = "EMEA"
     "Italy North"             = "EMEA"
     "Poland Central"          = "EMEA"
     "Spain Central"           = "EMEA"
@@ -29,7 +28,6 @@ variable "azure_locations_to_theatres" {
     "UAE North"               = "EMEA"
     "Qatar Central"           = "EMEA"
     "Israel Central"          = "EMEA"
-    "Israel Northwest"        = "EMEA"
 
     # APAC regions
     "East Asia"               = "APAC"
@@ -46,18 +44,9 @@ variable "azure_locations_to_theatres" {
     "India South Central"     = "APAC"
     "South India"             = "APAC"
     "West India"              = "APAC"
-    "Jio India West"          = "APAC"
-    "Jio India Central"       = "APAC"
     "Indonesia Central"       = "APAC"
     "Malaysia West"           = "APAC"
     "New Zealand North"       = "APAC"
-    "Taiwan North"            = "APAC"
-    "China East"              = "APAC"
-    "China East 2"            = "APAC"
-    "China East 3"            = "APAC"
-    "China North"             = "APAC"
-    "China North 2"           = "APAC"
-    "China North 3"           = "APAC"
 
     # AMER regions
     "East US"                 = "AMER"
@@ -75,15 +64,5 @@ variable "azure_locations_to_theatres" {
     "Brazil Southeast"        = "AMER"
     "Chile Central"           = "AMER"
     "Mexico Central"          = "AMER"
-
-    # US Government regions
-    "US Gov Arizona"          = "AMER"
-    "US Gov Texas"            = "AMER"
-    "US Gov Virginia"         = "AMER"
-    "US Gov Iowa"             = "AMER"
-    "US Gov Utah"             = "AMER"
-    "US Gov California"       = "AMER"
-    "US DoD Central"          = "AMER"
-    "US DoD East"             = "AMER"
   }
 }

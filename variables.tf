@@ -1,5 +1,5 @@
 variable "azure_locations_to_theatres" {
-  description = "Mapping of Azure public cloud locations to their theatre of operations (EMEA, APAC, AMER)"
+  description = "Mapping of Azure public cloud locations to their theatre of operations (EMEA, APAC, AMER). This list intentionally excludes Gov, DoD, and preview region names unless they are explicitly added for a specific release."
   type        = map(string)
   default = {
     # EMEA regions
@@ -27,6 +27,7 @@ variable "azure_locations_to_theatres" {
     "UAE Central"             = "EMEA"
     "UAE North"               = "EMEA"
     "Qatar Central"           = "EMEA"
+    "Saudi Arabia East"       = "EMEA"
     "Israel Central"          = "EMEA"
 
     # APAC regions
@@ -64,5 +65,6 @@ variable "azure_locations_to_theatres" {
     "Brazil Southeast"        = "AMER"
     "Chile Central"           = "AMER"
     "Mexico Central"          = "AMER"
+
   }
 }

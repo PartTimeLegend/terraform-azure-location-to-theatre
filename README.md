@@ -10,6 +10,10 @@ Azure Theatre is a Terraform module that maps Azure regions to their respective 
 - Allows querying of the theatre for a specific Azure region.
 - Explicitly documents that sovereign, gov, DoD, and preview Azure locations must be added explicitly rather than assumed from the public cloud list.
 
+### Special Azure Environments
+
+This module intentionally tracks the Azure public cloud region map only. Future agents must add sovereign-cloud, government, DoD, and preview region names explicitly when they are required for a specific workload; they should not be inferred from the default map or treated as part of the public-cloud list.
+
 ## Usage
 
 ### Example

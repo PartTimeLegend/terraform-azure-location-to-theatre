@@ -66,15 +66,5 @@ variable "azure_locations_to_theatres" {
     "Chile Central"           = "AMER"
     "Mexico Central"          = "AMER"
 
-    # Azure sovereign, government, DoD, and preview regions should be added explicitly here
-    # when they are known to be available for a given workload; they are not included in the
-    # default public-cloud map.
-    "US Gov Virginia"         = "AMER"
-    "US Gov Arizona"          = "AMER"
-    "US Gov Texas"            = "AMER"
-    "US DoD Central"           = "AMER"
-    "US DoD East"             = "AMER"
-    "US Sec East"             = "AMER"
-    "US Sec West"             = "AMER"
   }
 }

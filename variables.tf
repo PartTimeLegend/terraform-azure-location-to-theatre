@@ -27,6 +27,7 @@ variable "azure_locations_to_theatres" {
     "UAE Central"             = "EMEA"
     "UAE North"               = "EMEA"
     "Qatar Central"           = "EMEA"
+    "Saudi Arabia East"       = "EMEA"
     "Israel Central"          = "EMEA"
 
     # APAC regions

@@ -1,5 +1,5 @@
 variable "azure_locations_to_theatres" {
-  description = "Mapping of Azure public cloud locations to their theatre of operations (EMEA, APAC, AMER)"
+  description = "Mapping of Azure public cloud locations to their theatre of operations (EMEA, APAC, AMER). This list intentionally excludes Gov, DoD, and preview region names unless they are explicitly added for a specific release."
   type        = map(string)
   default = {
     # EMEA regions
@@ -65,5 +65,16 @@ variable "azure_locations_to_theatres" {
     "Brazil Southeast"        = "AMER"
     "Chile Central"           = "AMER"
     "Mexico Central"          = "AMER"
+
+    # Azure sovereign, government, DoD, and preview regions should be added explicitly here
+    # when they are known to be available for a given workload; they are not included in the
+    # default public-cloud map.
+    "US Gov Virginia"         = "AMER"
+    "US Gov Arizona"          = "AMER"
+    "US Gov Texas"            = "AMER"
+    "US DoD Central"           = "AMER"
+    "US DoD East"             = "AMER"
+    "US Sec East"             = "AMER"
+    "US Sec West"             = "AMER"
   }
 }

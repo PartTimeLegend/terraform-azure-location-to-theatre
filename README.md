@@ -8,6 +8,7 @@ Azure Theatre is a Terraform module that maps Azure regions to their respective 
 - Supports both standard format region names (e.g., "UK South") and lowercase, no-space versions (e.g., "uksouth").
 - Outputs lists of all Azure region names and theatre names.
 - Allows querying of the theatre for a specific Azure region.
+- Explicitly documents that sovereign, gov, DoD, and preview Azure locations must be added explicitly rather than assumed from the public cloud list.
 
 ## Usage
 
